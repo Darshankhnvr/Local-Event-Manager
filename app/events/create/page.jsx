@@ -1,6 +1,7 @@
+"use client"
+import EventForm from "@/app/components/EventForm";
 import { SignedIn, SignedOut, useClerk } from "@clerk/nextjs";
 import { useEffect } from "react";
-import EventForm from "../../components/EventForm";
 
 export default function CreateEventPage() {
   const { isSignedIn, redirectToSignIn } = useClerk();
